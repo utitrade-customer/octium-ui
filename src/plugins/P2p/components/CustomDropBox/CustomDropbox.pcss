@@ -1,0 +1,63 @@
+.p2p-component-custom-drop-box {
+	min-width: 12.5em;
+
+	&__dropdown {
+		background-color: rgb(var(--rgb-main-background-color));
+		border-radius: 30px;
+		display: flex;
+		flex-direction: column;
+		height: 3.5em;
+		justify-content: center;
+		padding: 0 1em;
+		text-align: center;
+
+		img {
+			border-radius: 50%;
+			height: 20px;
+			max-height: 20px;
+			max-width: 20px;
+			width: 20px;
+		}
+
+		&__options {
+			background-color: rgb(var(--rgb-main-background-color));
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+			&__input {
+				background-color: white;
+				border: none;
+				margin: 0.5em 1em;
+			}
+
+			&__option {
+				color: rgb(var(--rgb-text-black));
+				cursor: pointer;
+				padding: 0.5em 0;
+				padding-left: 1em;
+
+				&:hover {
+					background-color: rgb(var(--rgb-blue));
+				}
+
+				img {
+					border-radius: 50%;
+					height: 20px;
+					max-height: 20px;
+					max-width: 20px;
+					width: 20px;
+				}
+			}
+
+			&__no-option {
+				color: rgb(var(--rgb-text-black));
+				text-align: center;
+			}
+		}
+
+		&__value {
+			color: rgb(var(--rgb-emperor));
+			font-size: 1.2rem;
+			font-weight: 600;
+		}
+	}
+}

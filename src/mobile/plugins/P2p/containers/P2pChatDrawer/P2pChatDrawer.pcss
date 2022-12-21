@@ -1,0 +1,215 @@
+.p2p-mobile-container-chat-drawer {
+	.ant-drawer-title {
+		color: rgb(var(--rgb-raisin-black));
+		font-size: 1.286rem;
+		font-weight: 600;
+		height: 1.5rem;
+		text-align: left;
+	}
+
+	.ant-drawer-header {
+		background: rgb(var(--rgb-body-background-color));
+		border-bottom: none;
+		box-shadow: none;
+		margin-bottom: 5em;
+		padding: 1.143em 1.643rem;
+	}
+
+	.ant-drawer-wrapper-body {
+		background: rgb(var(--rgb-body-background-color));
+	}
+
+	.ant-drawer-body {
+		overflow-y: hidden;
+		padding: 0;
+	}
+
+	&__advertiser-information {
+		&__verified-icon {
+			color: rgb(var(--rgb-jungle-green));
+			font-size: 1.143rem;
+			font-weight: 900;
+			line-height: 18px;
+			margin-left: 0.5em;
+			margin-right: 1em;
+		}
+
+		&__verified-merchant {
+			font-size: 1rem;
+			font-weight: 500;
+		}
+
+		&__report {
+			color: rgb(var(--rgb-blue));
+			font-size: 1rem;
+			font-weight: 600;
+			text-decoration: underline;
+		}
+
+		&__label {
+			font-size: 1rem;
+			font-weight: 300;
+		}
+	}
+
+	&__chat-box {
+		background: rgba(var(--rgb-mercury));
+		border: 1px solid rgb(var(--rgb-p2p-bg-section));
+		display: flex;
+		flex-direction: column;
+		font-size: 1rem;
+
+		&__history {
+			flex-grow: 1;
+			height: calc(100vh - 14em);
+			overflow: scroll;
+			padding: 1em 1em 1em;
+
+			&__notice {
+				background: rgb(var(--rgb-half-colonial-white));
+				border: 2px solid rgb(var(--rgb-selective-yellow));
+				color: rgb(var(--rgb-scorpion));
+				padding: 1.8em;
+				position: relative;
+
+				&.hide {
+					display: none;
+				}
+
+				&.less {
+					p {
+						height: 1.5em;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+				}
+
+				p {
+					font-weight: 400;
+				}
+
+				button {
+					background-color: transparent;
+					border: none;
+				}
+
+				&__btn-close {
+					position: absolute;
+					right: 0.4em;
+					top: 0.4em;
+				}
+
+				&__btn-less {
+					color: rgb(var(--rgb-battery-charged-blue)) !important;
+					display: block;
+					font-weight: 400;
+					margin-left: auto;
+					text-decoration: underline;
+				}
+			}
+
+			&__pinned-message {
+				background: rgb(var(--rgb-main-background-color));
+				border: 1px solid rgb(var(--rgb-silver-29));
+				border-radius: 10px;
+				color: rgb(var(--rgb-scorpion));
+				margin-top: 1em;
+				padding: 1em;
+				position: relative;
+			}
+
+			.p2p-box-chat__message-box {
+				margin-left: 0.5rem;
+				margin-right: 2em;
+				margin-top: 5px;
+				max-width: 100%;
+
+				&--right {
+					margin-left: 2em;
+					margin-right: 0.5rem;
+					text-align: right;
+				}
+
+				&__img {
+					align-items: center;
+					display: flex;
+					justify-content: flex-start;
+					margin-left: 0.5em;
+					margin-right: 2em;
+					margin-top: 0.5em;
+
+					&--right {
+						align-items: center;
+						display: flex;
+						justify-content: flex-end;
+						margin-left: 2em;
+						margin-right: 0.5rem;
+						margin-top: 0.5em;
+					}
+
+					img {
+						border-radius: 5px;
+						max-width: 100%;
+					}
+				}
+
+				&__message {
+					background: rgb(0, 132, 255);
+					border-radius: 15px;
+					color: rgb(var(--rgb-text-white));
+					display: inline-block;
+					display: inline-block;
+					font-size: 1.167em;
+					padding: 0.5em 1em;
+					white-space: pre-wrap;
+					word-break: break-word;
+					word-wrap: break-word;
+
+					&--admin {
+						background: rgb(255, 159, 25);
+						color: rgb(var(--rgb-text-white));
+					}
+
+					&--partner {
+						background: #f1f1f1;
+						color: rgb(var(--rgb-scorpion));
+					}
+				}
+			}
+		}
+
+		&__type-area {
+			background: rgb(var(--rgb-wild-sand));
+			box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+			display: flex;
+			flex-shrink: 0;
+			gap: 0.5em;
+			height: 5em;
+			padding: 1em;
+
+			input {
+				background: rgb(var(--rgb-body-background-color));
+				border: none;
+				border-radius: 100px;
+				color: rgb(var(--rgb-text-black)) !important;
+				flex-grow: 1;
+				font-weight: 900;
+				height: 3em;
+				max-width: 100%;
+				min-width: 0;
+				opacity: 0.5;
+				padding: 0 1em;
+			}
+
+			button {
+				background-color: transparent;
+				border: none;
+
+				svg {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}

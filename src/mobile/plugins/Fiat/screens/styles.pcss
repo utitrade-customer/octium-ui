@@ -1,0 +1,52 @@
+@import './Bank/styles.pcss';
+
+.td-mobile-wallet-fiat {
+	padding: var(--mobile-main-padding-lr-size);
+	padding-top: 1em;
+
+	&__header {
+		align-items: center;
+		background-color: var(--body-background-color);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		height: 3.75em;
+		left: 0;
+		padding: 1em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+
+		&__goback {
+			cursor: pointer;
+		}
+
+		&__title {
+			color: rgb(var(--rgb-blue));
+			font-size: 1.25em;
+			font-weight: 600;
+			margin: 0;
+			text-align: center;
+		}
+
+		&__history {
+			align-items: center;
+			display: flex;
+			font-size: 0.8em;
+			justify-content: flex-end;
+			text-align: right;
+
+			&,
+			&:hover,
+			&:focus,
+			&:active {
+				color: rgb(var(--rgb-mobile-gray-color-2));
+			}
+
+			svg {
+				margin-left: 0.5em;
+			}
+		}
+	}
+}

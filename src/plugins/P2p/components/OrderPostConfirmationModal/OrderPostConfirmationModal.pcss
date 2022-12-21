@@ -1,0 +1,58 @@
+.p2p-component-order-post-confirmation-modal {
+	width: 45em !important;
+
+	&__notice {
+		align-items: center;
+		background-color: rgb(var(--rgb-lily-white));
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin: 2em 0;
+		padding: 1em 1em;
+	}
+
+	&__information {
+		font-weight: 600;
+
+		&__label {
+			color: rgb(var(--rgb-dusty-gray));
+			margin-bottom: 0.2em;
+		}
+
+		&__error {
+			color: var(--asks);
+			margin-bottom: 0.2em;
+		}
+
+		&__value {
+			color: rgb(var(--rgb-mine-shaft));
+		}
+
+		&__trading-type {
+			&--buy {
+				color: rgb(var(--rgb-jungle-green));
+			}
+
+			&--sell {
+				color: rgb(var(--rgb-flush-mahogany));
+			}
+		}
+	}
+
+	&__button-group {
+		background-color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		&__button {
+			height: 3.5em;
+			margin-top: 1em;
+			width: 50%;
+
+			&:first-child {
+				margin-right: 1em;
+			}
+		}
+	}
+}

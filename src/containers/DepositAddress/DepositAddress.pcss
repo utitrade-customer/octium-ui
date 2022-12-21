@@ -1,0 +1,138 @@
+#deposit-address {
+	position: relative;
+
+	#countdown-renderer {
+		margin: auto;
+		width: 91.5%;
+
+		.timing {
+			flex: 0 0 25%;
+			max-width: 25%;
+			padding: 0 5px;
+
+			&__material {
+				background-color: var(--thin-blue);
+				border-radius: 5px;
+				box-sizing: border-box;
+				font-size: 1.3rem;
+				line-height: 1.2rem;
+				padding: 1.25rem;
+				text-align: center;
+
+				p {
+					color: var(--system-text-black-color);
+					font-size: 1.5rem;
+				}
+
+				span {
+					color: var(--system-text-black-color);
+				}
+			}
+		}
+	}
+
+	.amount-box {
+		align-items: center;
+		background: var(--order-header-color);
+		border: 1px solid var(--main-background-color);
+		border-radius: 50px;
+		box-sizing: border-box;
+		display: flex;
+		flex: 1 1 auto;
+		height: 100%;
+		padding: 10px 20px;
+
+		span {
+			color: var(--system-text-black-color);
+			font-size: 14px;
+			white-space: nowrap;
+		}
+
+		input {
+			background-color: transparent;
+			border: 0;
+			border-radius: 0;
+			color: var(--system-text-black-color);
+			flex: 1 1 auto;
+			font-size: 19px;
+			font-weight: 700;
+			letter-spacing: 0.7px;
+			margin: 0;
+			outline: 0;
+			padding: 0 10px;
+			text-align: right;
+			width: 0;
+		}
+	}
+
+	.react-tabs {
+		&__loading {
+			background-color: rgba(238, 238, 238, 0.7);
+			display: grid;
+			height: 100%;
+			left: 0;
+			place-items: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 10;
+		}
+
+		.rc-tabs-nav-list {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.rc-tabs-tab {
+				border-bottom: 4px solid rgb(78, 84, 99);
+				padding: 5px 0;
+				transition: ease-in-out 0.2s;
+				width: 100%;
+
+				.rc-tabs-tab-btn {
+					border: none;
+					cursor: pointer;
+					outline: none;
+					text-align: center;
+				}
+
+				:hover {
+					color: var(--system-text-black-color);
+					font-weight: bold;
+				}
+			}
+
+			.rc-tabs-tab-active {
+				border-bottom: 4px solid var(--blue);
+				color: var(--system-text-black-color);
+				font-weight: bold;
+			}
+
+			.rc-tabs-ink-bar {
+				display: none;
+			}
+		}
+	}
+
+	.blur-disabled {
+		align-items: center;
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background: var(--body-background-color-level-6);
+		content: '';
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 10;
+	}
+
+	.cr-copyable-text-field .input-group .custom-input .input-group-lg input {
+		background-color: var(--header-background-color);
+		border-radius: 20px;
+	}
+}

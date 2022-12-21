@@ -1,0 +1,215 @@
+.home-market-overview {
+	--background-tab-list: var(--thin-blue);
+	--background-tab-active: #fff;
+	--border-tab: 20px;
+	--box-shadow-color: #c2e2f0;
+
+	.market-overview {
+		&--title {
+			color: var(--system-text-black-color);
+			font-size: var(--fs-title);
+			font-weight: 600;
+		}
+
+		&--sub-title {
+			color: var(--sub-title-color);
+			font-size: var(--fs-sub-title);
+			font-weight: 300;
+		}
+	}
+
+	.search-wrapper {
+		align-items: center;
+		background-color: var(--system-text-white-color);
+		border-radius: 10px;
+		display: flex;
+		height: 3rem;
+		padding: 0 1rem;
+		position: relative;
+		transition: width 0.5s;
+		width: 250px;
+
+		&--active {
+			border: 1px solid var(--primary);
+			width: 300px;
+		}
+
+		&:hover {
+			border: 1px solid var(--primary);
+		}
+
+		.search-input {
+			border: none;
+			color: var(--system-text-black-color);
+			font-size: 1.1rem;
+			outline: none;
+			padding-left: 1rem;
+		}
+
+		.search-result {
+			background-color: var(--system-text-white-color);
+			border-radius: 5px;
+			box-shadow: 0 5px 15px 0 var(--text-contrast-color-level-1);
+			height: 20rem;
+			left: 0;
+			overflow: overlay;
+			overflow-y: auto;
+			position: absolute;
+			top: 4rem;
+			width: 100%;
+			z-index: 999;
+
+			&-item {
+				color: var(--system-text-black-color);
+				cursor: pointer;
+				font-size: 1.2rem;
+				padding: 1rem;
+				padding-top: 1rem;
+
+				&-icon {
+					height: 2rem;
+				}
+
+				span {
+					color: #aeb0b3;
+					font-size: 1.1rem;
+					margin-left: 2rem;
+				}
+
+				&:hover {
+					background-color: var(--dropdown-background-color-hover);
+				}
+			}
+
+			&-empty {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				font-size: 1.2rem;
+				justify-content: center;
+				padding: 2rem 1rem;
+
+				a {
+					background-color: var(--system-text-white-color);
+					border: none;
+					border: 1px solid var(--primary);
+					border-radius: 5px;
+					color: var(--primary);
+					font-size: 1.1rem;
+					margin-top: 1rem;
+					outline: none;
+					padding: 0.5rem;
+					text-decoration: none;
+
+					&:hover {
+						background-color: var(--primary);
+						color: var(--system-text-white-color);
+					}
+				}
+			}
+		}
+
+		::-webkit-scrollbar {
+			height: 5px;
+			width: 10px;
+		}
+
+		::-webkit-horizontal,
+		::-webkit-scrollbar {
+			background-color: #fff;
+			height: 6px;
+			padding: 0;
+			width: 6px;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background-color: #80daf6;
+			border-radius: 4px;
+			box-shadow: inset 0 0 4px rgb(0 0 0 / 5%);
+			width: 6px;
+		}
+	}
+
+	.tab-list {
+		--height-tab: 4rem;
+
+		background-color: var(--background-tab-list);
+		border-top-left-radius: var(--border-tab);
+		border-top-right-radius: var(--border-tab);
+		display: inline-flex;
+		height: var(--height-tab);
+
+		&-item {
+			align-items: center;
+			color: var(--system-text-black-color, #000);
+			cursor: pointer;
+			display: flex;
+			font-size: 1.5rem;
+			font-weight: 300;
+			justify-content: center;
+			padding: 1rem 2rem;
+			position: relative;
+
+			&:first-child {
+				border-top-left-radius: var(--border-tab);
+			}
+
+			&:last-child {
+				border-top-right-radius: var(--border-tab);
+			}
+
+			&--active {
+				background-color: #fff !important;
+				border-top-width: 45px;
+				color: var(--system-text-black-color);
+				font-weight: bold;
+
+				.corner-start {
+					background-color: var(--background-tab-list);
+					border: 0 solid var(--background-tab-list);
+					border-color: transparent;
+					border-right-color: var(--background-tab-active);
+					border-right-width: 30px;
+					border-top-width: var(--height-tab);
+					box-sizing: border-box;
+					content: '';
+					display: block;
+					height: 100%;
+					left: -15px;
+					position: absolute;
+					top: 0;
+					z-index: 99;
+				}
+
+				.corner-end {
+					background-color: var(--background-tab-list);
+					border: 0 solid var(--background-tab-list);
+					border-color: transparent;
+					border-left-color: var(--background-tab-active);
+					border-left-width: 30px;
+					border-top-width: var(--height-tab);
+					box-sizing: border-box;
+					content: '';
+					display: block;
+					position: absolute;
+					right: -15px;
+					top: 0;
+					z-index: 99;
+				}
+			}
+		}
+	}
+
+	.market-link {
+		align-items: center;
+		color: var(--primary);
+		cursor: pointer;
+		display: flex;
+		font-size: 1.25rem;
+		justify-content: center;
+
+		&:hover {
+			font-weight: bold;
+		}
+	}
+}

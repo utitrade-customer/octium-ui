@@ -1,0 +1,65 @@
+#ranking-mobile-competition- {
+	font-size: 14px;
+
+	.ranking-mobile-competition-__winner {
+		&__uid {
+			color: #2fb67e;
+			font-size: 20px;
+			font-weight: bold;
+			padding-top: 8px;
+		}
+	}
+
+	.ranking-mobile-competition-__listing {
+		&__title {
+			align-items: center;
+			background: var(--body-background-color);
+			border-radius: 10px;
+			display: flex;
+			padding: 1.5rem;
+			position: relative;
+
+			&__limit {
+				color: var(--system-text-black-color);
+				margin-left: 1rem;
+			}
+		}
+
+		&__content {
+			background: var(--body-background-color);
+			box-shadow: 0 70px 100px rgba(0, 0, 0, 0.08);
+
+			table {
+				border-radius: 5px;
+				box-shadow: 0 70px 100px rgba(0, 0, 0, 0.08);
+				color: var(--system-text-black-color);
+
+				thead {
+					background: var(--blue);
+					border-radius: 3px 3px 0 0;
+
+					tr {
+						th {
+							border: none;
+							font-weight: normal;
+						}
+					}
+				}
+
+				tbody {
+					background: var(--body-background-color);
+					box-shadow: 0 70px 100px rgba(0, 0, 0, 0.08);
+
+					tr {
+						border-color: var(--thin-blue);
+
+						td {
+							border-top: 1px solid var(--thin-blue);
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+	}
+}

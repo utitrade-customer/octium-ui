@@ -1,0 +1,16 @@
+export default {
+	mobileScreen: require('./mobileScreen.png'),
+	apple_logo: require('./apple_logo.png'),
+	CHPlay_logo: require('./CHPlay_logo.png'),
+	android_logo: require('./android_logo.png'),
+	bg_download: require('./bg_download.png'),
+	maskGroupIntro1: require('./maskgroupIntro1.png'),
+	maskGroupIntro2: require('./maskgroupIntro2.png'),
+	maskGroupIntro3: require('./maskgroupIntro3.png'),
+	maskGroupIntro4: require('./maskgroupIntro4.png'),
+	service1: require('./service1.png'),
+	service2: require('./service2.png'),
+	service3: require('./service3.png'),
+	service4: require('./service4.png'),
+	trip_bg: require('./trip_bg.png'),
+};

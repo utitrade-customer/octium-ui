@@ -1,0 +1,9 @@
+HTTP/2 200
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT, PATCH, OPTIONS, HEAD
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Credentials: true
+
+
+[{"id":"busd-bep20","parent_id":"busd","blockchain_key":"bsc-main"},{"id":"eth-bep20","parent_id":"eth","blockchain_key":"bsc-main"},{"id":"tusd-bep20","parent_id":"tusd","blockchain_key":"bsc-main"},{"id":"usdc-bep20","parent_id":"usdc","blockchain_key":"bsc-main"},{"id":"usdt-bep20","parent_id":"usdt","blockchain_key":"bsc-main"},{"id":"wbtc","parent_id":"btc","blockchain_key":"eth-main"},{"id":"usdt-trc20","parent_id":"usdt","blockchain_key":"trx-main"},{"id":"ltc-bep20","parent_id":"ltc","blockchain_key":"bsc-main"},{"id":"trx-bep20","parent_id":"trx","blockchain_key":"bsc-main"}]

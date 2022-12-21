@@ -1,0 +1,117 @@
+.pg-mobile-p2p-add-payment {
+	font-size: var(--font-size);
+	padding-bottom: 10rem;
+
+	&__box {
+		background-color: var(--p2p-background-white);
+		padding: 1rem;
+
+		&__name-method {
+			color: var(--p2p-text-primary);
+			font-size: 1.143rem;
+			font-weight: 600;
+			padding-bottom: 1rem;
+		}
+
+		&__field {
+			padding-bottom: 1rem;
+
+			.btn-up-img {
+				height: 150px;
+				margin-bottom: 1rem;
+				width: 150px;
+			}
+
+			.ant-form-item .ant-form-item-label {
+				padding: 0;
+			}
+
+			.ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before,
+			::after {
+				display: none;
+			}
+
+			&__upload-img {
+				color: var(--p2p-text-second);
+				cursor: pointer;
+			}
+
+			label {
+				margin-bottom: 0 !important;
+			}
+
+			.ant-form-item-label > label {
+				color: var(--p2p-text-second);
+				font-size: 1rem;
+				font-weight: 400;
+			}
+
+			.ant-row {
+				display: unset !important;
+			}
+
+			.ant-form-item-control-input-content {
+				input {
+					border: none !important;
+					border-bottom: 1px solid rgb(var(--rgb-gray-dark)) !important;
+					color: var(--p2p-text-primary) !important;
+					font-size: 1.14rem;
+					font-weight: 400;
+					line-height: 1.57rem;
+					outline: none !important;
+					padding: 4px 0;
+					padding-left: 0;
+
+					&:focus {
+						border: none;
+						border-right-width: 0 !important;
+						box-shadow: none;
+						outline: 0;
+					}
+				}
+			}
+		}
+
+		&__tips {
+			padding-bottom: 2rem;
+			padding-top: 1.5rem;
+
+			&__title {
+				color: var(--p2p-text-primary);
+				font-size: 1rem;
+				font-weight: 600;
+				line-height: 1.57rem;
+			}
+
+			&__desc {
+				color: var(--p2p-text-desc);
+				font-size: 0.857rem;
+				font-weight: 400;
+				line-height: 1.1rem;
+				padding-top: 0.35rem;
+			}
+		}
+
+		&__group-btn {
+			display: flex;
+			justify-content: flex-end;
+			padding-bottom: 1.5rem;
+
+			&__box {
+				display: flex;
+				font-size: 1rem;
+				font-weight: 500;
+				justify-content: center;
+				text-align: center;
+
+				&__btn {
+					padding: 0.4rem 2.35rem;
+
+					&:first-child {
+						margin-right: 1.1875rem;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,217 @@
+.p2p-mobile-component-filter-drawer {
+	.ant-drawer-close {
+		padding: 0;
+		right: 1.643rem;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.ant-drawer-title {
+		color: rgb(var(--rgb-raisin-black));
+		font-size: 1.286rem;
+		font-weight: 600;
+		height: 1.5rem;
+		text-align: center;
+	}
+
+	.ant-drawer-header {
+		background: rgb(var(--rgb-body-background-color));
+		border-bottom: none;
+		box-shadow: 0 0.286em 0.714em rgba(var(--rgb-text-black), 0.2);
+		padding: 1.143em 1.643rem;
+	}
+
+	.ant-drawer-body {
+		background: rgb(var(--rgb-body-background-color));
+		padding: 2.143em 1.429em;
+	}
+
+	&__amount-input {
+		display: flex;
+		flex-direction: column;
+		gap: 0.714em;
+
+		label {
+			color: rgb(var(--rgb-raisin-black));
+		}
+
+		&__currency {
+			color: rgb(var(--rgb-emperor));
+		}
+
+		.ant-input {
+			border: none !important;
+			border-bottom: 1px solid rgb(var(--rgb-alto)) !important;
+			border-left: 1px solid rgb(var(--rgb-alto)) !important;
+			border-top: 1px solid rgb(var(--rgb-alto)) !important;
+			height: 3em;
+		}
+
+		.ant-input-group-addon {
+			border: none;
+			border-bottom: 1px solid rgb(var(--rgb-alto));
+			border-right: 1px solid rgb(var(--rgb-alto));
+			border-top: 1px solid rgb(var(--rgb-alto));
+		}
+
+		&__input {
+			background: rgb(var(--rgb-order-header-color));
+			border: 1px solid rgb(var(--rgb-mobile-stake-border));
+			border-radius: 50px;
+			box-sizing: border-box;
+			display: flex;
+			height: 2.5em;
+			padding: 0 1.4em;
+
+			input {
+				background-color: transparent;
+				border: none;
+				flex-grow: 1;
+				height: 100%;
+				min-width: 0;
+				outline: none;
+
+				&::placeholder {
+					color: rbg(var(--rgb-mobile-input-border-color));
+					font-weight: 600;
+				}
+
+				&:-ms-input-placeholder {
+					color: rbg(var(--rgb-mobile-input-border-color));
+					font-weight: 600;
+				}
+
+				&::-ms-input-placeholder {
+					color: rbg(var(--rgb-mobile-input-border-color));
+					font-weight: 600;
+				}
+			}
+
+			span {
+				align-self: center;
+				font-weight: 600;
+			}
+		}
+	}
+
+	&__payment {
+		margin-top: 2.75em;
+
+		&__header {
+			display: flex;
+			justify-content: space-between;
+
+			&__title {
+				color: rgb(var(--rgb-emperor));
+				font-size: 1em;
+				font-weight: 400;
+				line-height: 1.171875em;
+			}
+
+			&__show-all {
+				cursor: pointer;
+
+				span {
+					color: rgb(var(--rgb-blue));
+					font-size: 0.875em;
+					line-height: 1.2em;
+					padding: 0;
+				}
+
+				&__up-down-icon {
+					color: rgb(var(--rgb-blue));
+					margin-left: 0.5em;
+				}
+			}
+		}
+
+		&__body {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.875em 0.8125em;
+			margin-top: 0.8125em;
+
+			&__item {
+				background-color: rgb(var(--rgb-main-background-color));
+				border: 1px solid transparent;
+				color: rgb(var(--rgb-emperor));
+				font-size: 0.85em;
+				font-weight: 400;
+				height: 3.5em;
+				line-height: 1em;
+				width: 31%;
+
+				&--active {
+					background-color: rgb(var(--rgb-blue));
+					color: rgb(var(--rgb-text-white)) !important;
+				}
+			}
+		}
+	}
+
+	&__fiat {
+		margin-bottom: 5em;
+		margin-top: 3em;
+
+		&__header {
+			display: flex;
+			justify-content: space-between;
+
+			&__title {
+				color: rgb(var(--rgb-emperor));
+				font-size: 1em;
+				line-height: 1.171875em;
+			}
+
+			&__btn-all {
+				background-color: transparent;
+				border-color: transparent;
+				color: var(--yellow);
+				font-size: 0.875em;
+				font-weight: 400;
+				line-height: 1.2em;
+				padding: 0;
+			}
+		}
+
+		&__body {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.875em 0.8125em;
+			margin-top: 0.8125em;
+
+			&__item {
+				background-color: rgb(var(--rgb-main-background-color));
+				border: 1px solid transparent;
+				color: rgb(var(--rgb-emperor));
+				font-size: 0.85em;
+				font-weight: 400;
+				height: 3.5em;
+				line-height: 1em;
+				width: 31%;
+
+				&--active {
+					background-color: rgb(var(--rgb-blue));
+					color: rgb(var(--rgb-text-white)) !important;
+				}
+			}
+		}
+	}
+
+	&__group-btn {
+		background: rgb(var(--rgb-body-background-color));
+		bottom: 0;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 2em;
+		padding-top: 1em;
+		position: fixed;
+		width: 90%;
+
+		&__btn {
+			font-size: 1.125em;
+			height: 3em;
+			width: 47%;
+		}
+	}
+}

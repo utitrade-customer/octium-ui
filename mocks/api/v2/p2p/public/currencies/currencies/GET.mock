@@ -1,0 +1,9 @@
+HTTP/2 200
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT, PATCH, OPTIONS, HEAD
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Credentials: true
+
+
+{"listCurrencies":[{"id":"bnb","minAmount":"5.000000000000000000","maxAmount":"1000.000000000000000000","fee":"1.000000000000000000","createdAt":"2022-04-23T14:07:14.000Z","updatedAt":"2022-04-23T14:07:14.000Z","price":"387.3700000000000000"},{"id":"usdc","minAmount":"100.000000000000000000","maxAmount":"1000000.000000000000000000","fee":"0.500000000000000000","createdAt":"2022-05-18T03:09:51.000Z","updatedAt":"2022-05-18T03:09:51.000Z","price":"1.0000000000000000"},{"id":"usdt","minAmount":"100.000000000000000000","maxAmount":"1000000.000000000000000000","fee":"0.500000000000000000","createdAt":"2022-04-23T14:07:14.000Z","updatedAt":"2022-04-23T14:07:14.000Z","price":"1.0000000000000000"}]}

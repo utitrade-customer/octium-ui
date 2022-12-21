@@ -1,0 +1,133 @@
+.p2p-container-confirmation-otp-popup-modal {
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+	height: 100%;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+
+	&__content {
+		background-color: rgb(var(--rgb-body-background-color));
+		margin: auto;
+		padding: 1.6em 2.08em;
+		width: 35%;
+
+		&__title {
+			align-items: center;
+			color: rgb(var(--rgb-raisin-black));
+			display: flex;
+			font-size: 1.3em;
+			font-weight: 600;
+			justify-content: space-between;
+			line-height: 2.28em;
+
+			svg {
+				color: rgb(var(--rgb-raisin-black));
+				cursor: pointer;
+			}
+		}
+
+		&__desc {
+			color: rgb(var(--rgb-raisin-black));
+			font-size: 1.16em;
+			line-height: 1.4em;
+			padding-top: 0.5em;
+		}
+
+		&__box-input-info-confirm {
+			padding: 1.8em 0;
+
+			&__title {
+				border-left: 2px solid rgb(var(--rgb-battery-charged-blue));
+				color: rgb(var(--rgb-raisin-black));
+				font-size: 1.16em;
+				font-weight: 600;
+				line-height: 1.35em;
+				padding-left: 2.2em;
+			}
+
+			&__input {
+				padding-left: 2.91em;
+				padding-top: 1.25em;
+
+				&__title {
+					color: rgb(var(--rgb-downriver));
+					font-size: 1.16em;
+					line-height: 1.35em;
+				}
+
+				&__input-text {
+					color: var(--p2p-text-second);
+					font-size: 1.16em;
+				}
+			}
+		}
+
+		&__box-info {
+			background-color: rgb(var(--rgb-thin-blue));
+			color: rgb(var(--rgb-downriver));
+			font-size: 1em;
+			line-height: 1.28em;
+			padding: 1em 1.8em;
+		}
+
+		&__box-allow {
+			display: flex;
+			flex-direction: row;
+			padding-top: 0.83em;
+
+			&__check-box {
+				&__custom-checkbox {
+					border: 1px solid #848e9c;
+					height: 1.25em;
+					position: relative;
+					width: 1.25em;
+
+					&__icon {
+						color: rgb(var(--rgb-blue));
+						position: absolute;
+						top: 0;
+					}
+				}
+
+				padding-right: 0.83em;
+				padding-top: 1px;
+			}
+
+			&__desc {
+				color: rgb(var(--rgb-downriver));
+				font-size: 1em;
+				line-height: 1.14em;
+			}
+		}
+
+		&__box-btn {
+			display: flex;
+			padding-bottom: 2em;
+			padding-top: 2.08em;
+			width: 100%;
+
+			&__cancel {
+				font-size: 1em;
+				line-height: 1.5em;
+				margin-right: 0.83em;
+				padding: 0.7em 1.8em;
+				text-align: center;
+				width: 100%;
+			}
+
+			&__confirm {
+				font-size: 1em;
+				font-weight: 600;
+				line-height: 1.5em;
+				padding: 0.7em 1.8em;
+				text-align: center;
+				width: 100%;
+			}
+		}
+	}
+}

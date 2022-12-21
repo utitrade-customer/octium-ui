@@ -1,0 +1,112 @@
+.announcement__detail {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	padding: 0 10%;
+
+	img {
+		width: 100%;
+	}
+
+	&__container {
+		.announcement__article {
+			background: var(--header-background-color);
+			border-radius: 8px;
+			height: 100%;
+			min-height: 700px;
+			padding: 2rem;
+
+			&__prev {
+				.anticon-left-circle {
+					color: var(--blue);
+					font-size: 24px;
+				}
+			}
+
+			&__heading {
+				color: var(--system-text-black-color);
+				font-size: 2rem;
+				font-weight: bold;
+				line-height: 38px;
+			}
+
+			&__created {
+				color: var(--system-text-black-color);
+				font-size: 12px;
+				line-height: 16px;
+			}
+
+			&__desc {
+				color: var(--system-text-black-color);
+				font-size: 16px;
+				font-weight: 800;
+				line-height: 22px;
+				margin-top: 4rem;
+			}
+
+			&__body {
+				p {
+					color: var(--system-text-black-color);
+					font-size: 16px;
+					line-height: 28px;
+				}
+
+				a {
+					color: var(--blue);
+					font-size: 16px;
+					line-height: 28px;
+				}
+			}
+
+			.udonex__team {
+				color: var(--blue);
+				font-size: 16px;
+				line-height: 28px;
+			}
+		}
+
+		.announcement__latest {
+			background: var(--header-background-color);
+			border-radius: 8px;
+			height: 100%;
+			min-height: 700px;
+			padding: 2rem;
+
+			&__heading {
+				border-bottom: 4px solid var(--blue);
+				color: var(--system-text-black-color);
+				font-size: 2rem;
+				font-weight: bold;
+				line-height: 33px;
+				margin-bottom: 3rem;
+				padding-bottom: 1rem;
+			}
+
+			.article__box {
+				div {
+					p {
+						color: #4895ef;
+						font-size: 16px;
+						line-height: 22px;
+					}
+
+					span {
+						color: var(--system-text-black-color);
+					}
+
+					background: var(--thin-blue);
+					margin-bottom: 4rem;
+					padding: 2rem;
+
+					&:hover {
+						color: var(--blue);
+						cursor: pointer;
+						transition: ease-in-out 0.2s;
+					}
+				}
+			}
+		}
+	}
+}

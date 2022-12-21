@@ -1,0 +1,137 @@
+.p2p-screen-mobile-my-trade {
+	padding-bottom: 1.429rem;
+
+	&__header {
+		background: rgb(var(--rgb-body-background-color));
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+		padding: 12px 0;
+
+		&__tabs {
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+
+			&__tab {
+				color: rgb(var(--rgb-dusty-gray));
+				cursor: pointer;
+				font-size: 1.2rem;
+				font-weight: 600;
+
+				&--active {
+					color: rgb(var(--rgb-blue));
+				}
+			}
+		}
+
+		&__download-refresh-icons {
+			background: rgb(var(--rgb-mercury));
+			border-radius: 5px;
+			cursor: pointer;
+			padding: 0.3em 1.5em;
+			text-align: center;
+
+			img {
+				margin: 0;
+			}
+
+			&:hover {
+				background: rgb(240, 240, 240);
+			}
+		}
+
+		&__filter-icon {
+			background: rgb(var(--rgb-mercury));
+			border-radius: 5px;
+			cursor: pointer;
+			padding: 0.3em 0.8em;
+			text-align: center;
+
+			img {
+				margin: 0;
+			}
+
+			&:hover {
+				background: rgb(240, 240, 240);
+			}
+		}
+	}
+
+	&__body {
+		background: rgb(var(--rgb-body-background-color));
+		border-radius: 5px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+		margin-top: 1em;
+
+		&__box {
+			&__row {
+				border-bottom: 1px solid var(--p2p-border-line);
+				padding: 0.857rem;
+				padding-left: 0.857rem;
+				padding-right: 0.857rem;
+
+				&__header {
+					align-items: center;
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-start;
+					padding-bottom: 0.857rem;
+
+					&__trading-type {
+						&--buy {
+							color: rgb(var(--rgb-jungle-green));
+							font-weight: 600;
+						}
+
+						&--sell {
+							color: rgb(var(--rgb-guardsman-red));
+							font-weight: 600;
+						}
+					}
+
+					&__trading-coin {
+						color: rgb(var(--rgb-raisin-black));
+						font-weight: 600;
+						margin: 0 0.5em;
+					}
+				}
+
+				&__body {
+					&__item {
+						align-items: center;
+						display: flex;
+						font-size: 1rem;
+						font-weight: 400;
+						justify-content: space-between;
+						line-height: 19px;
+						padding: 0.3em 0;
+
+						&__title {
+							color: rgb(var(--rgb-dove-gray));
+							font-size: 0.857rem;
+						}
+
+						&__content {
+							color: rgb(var(--rgb-raisin-black));
+
+							&--num-paid {
+								color: rgb(var(--rgb-blue));
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}
+
+			&__empty {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				padding: 1.143rem 0;
+			}
+		}
+
+		&__pagination {
+			padding: 1.143rem 0;
+		}
+	}
+}

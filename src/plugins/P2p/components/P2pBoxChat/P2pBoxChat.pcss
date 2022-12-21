@@ -1,0 +1,227 @@
+.p2p-component-box-chat {
+	display: flex;
+	flex-direction: column;
+	max-height: 60em;
+	min-height: 50em;
+
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: #f1f1f1;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #888;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+
+	.box-show-partner {
+		background: rgba(var(--rgb-mercury));
+		border-radius: 5px 5px 0 0;
+		padding: 1rem;
+
+		&__header {
+			align-items: center;
+			display: flex;
+
+			&__avatar {
+				img {
+					border-radius: 50%;
+					height: 40px;
+					width: 40px;
+				}
+			}
+
+			&__name {
+				padding-left: 5px;
+
+				&__name {
+					color: var(--p2p-text-primary);
+					font-size: 1.333rem;
+					font-weight: 600;
+				}
+
+				&__desc {
+					color: var(--p2p-text-primary);
+					font-size: 1.167rem;
+
+					span {
+						color: rgb(var(--rgb-blue));
+						font-size: 1.167rem;
+						padding-left: 0.5rem;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		&__body {
+			align-items: flex-start;
+			display: grid;
+			grid-row: auto auto;
+			grid-row-gap: 0.2rem;
+			grid-template-columns: 50% 50%;
+			padding-left: 50px;
+			padding-top: 0.5rem;
+
+			&__title {
+				color: var(--p2p-text-desc);
+				font-size: 1rem;
+			}
+
+			&__desc {
+				color: var(--p2p-text-primary);
+				font-size: 1.167rem;
+			}
+		}
+	}
+
+	&__history {
+		border: 1px solid var(--p2p-border-line);
+		flex-grow: 1;
+		overflow: scroll;
+		padding: 1em 0;
+
+		&__notice {
+			background: rgb(var(--rgb-half-colonial-white));
+			border: 2px solid rgb(var(--rgb-selective-yellow));
+			border-radius: 5px;
+			color: rgb(var(--rgb-scorpion));
+			font-size: 1.167em;
+			margin: 0 0.5em;
+			padding: 1.8em;
+			position: relative;
+
+			&.hide {
+				display: none;
+			}
+
+			p {
+				font-weight: 400;
+			}
+
+			button {
+				background-color: transparent;
+				border: none;
+			}
+
+			&__btn-close {
+				position: absolute;
+				right: 0.4em;
+				top: 0.4em;
+			}
+
+			&__btn-less {
+				color: rgb(var(--rgb-battery-charged-blue)) !important;
+				display: block;
+				font-weight: 400;
+				margin-left: auto;
+				text-decoration: underline;
+			}
+		}
+
+		.p2p-box-chat__message-box {
+			margin-left: 0.5rem;
+			margin-right: 2em;
+			margin-top: 5px;
+			max-width: 100%;
+
+			&--right {
+				margin-left: 2em;
+				margin-right: 0.5rem;
+				text-align: right;
+			}
+
+			&__img {
+				align-items: center;
+				display: flex;
+				justify-content: flex-start;
+				margin-left: 0.5em;
+				margin-right: 2em;
+				margin-top: 0.5em;
+
+				&--right {
+					align-items: center;
+					display: flex;
+					justify-content: flex-end;
+					margin-left: 2em;
+					margin-right: 0.5rem;
+					margin-top: 0.5em;
+				}
+
+				img {
+					border-radius: 5px;
+					max-width: 100%;
+				}
+			}
+
+			&__message {
+				background: rgb(0, 132, 255);
+				border-radius: 15px;
+				color: rgb(var(--rgb-text-white));
+				display: inline-block;
+				display: inline-block;
+				font-size: 1.167em;
+				padding: 0.5em 1em;
+				white-space: pre-wrap;
+				word-break: break-word;
+				word-wrap: break-word;
+
+				&--admin {
+					background: rgb(255, 159, 25);
+					color: rgb(var(--rgb-text-white));
+				}
+
+				&--partner {
+					background: #f1f1f1;
+					color: rgb(var(--rgb-scorpion));
+				}
+			}
+		}
+	}
+
+	&__type-area {
+		background: rgb(var(--rgb-wild-sand));
+		box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-shrink: 0;
+		gap: 0.5em;
+		height: 5em;
+		padding: 1em;
+
+		input {
+			background: rgb(var(--rgb-body-background-color));
+			border: none;
+			border-radius: 100px;
+			color: rgb(var(--rgb-text-black)) !important;
+			flex-grow: 1;
+			font-weight: 900;
+			height: 3em;
+			max-width: 100%;
+			min-width: 0;
+			opacity: 0.1rem;
+			padding: 0 1em;
+		}
+
+		button {
+			background-color: transparent;
+			border: none;
+
+			label {
+				cursor: pointer;
+			}
+
+			svg {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}

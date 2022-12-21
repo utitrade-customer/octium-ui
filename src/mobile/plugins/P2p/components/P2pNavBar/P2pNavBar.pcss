@@ -1,0 +1,122 @@
+.p2p-mobile-component-nav-bar {
+	&__poster {
+		background-color: rgb(var(--rgb-blue));
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		min-height: 10em;
+		padding: 1.5em 0 1em 1.5em;
+		width: 100%;
+
+		&__title {
+			color: rgb(var(--rgb-text-black));
+			font-size: 0.8rem;
+			font-weight: bold;
+			margin: 0.3em 0;
+			margin-left: 0.3em;
+		}
+
+		&__subtitle {
+			color: rgb(var(--rgb-text-black));
+			font-size: 0.6rem;
+			margin-left: 0.5em;
+		}
+	}
+
+	&__nav-bar {
+		background-color: rgb(var(--rgb-lucky-point));
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 1em;
+		width: 100%;
+
+		.ant-badge-count {
+			background-color: red;
+			box-shadow: none;
+		}
+
+		&__item {
+			align-items: center;
+			cursor: pointer;
+			display: flex;
+			flex-direction: row;
+			padding: 1em 0;
+
+			&__label {
+				color: rgb(var(--rgb-text-white)) !important;
+				font-weight: 600;
+			}
+
+			&__icon {
+				color: rgb(var(--rgb-text-white)) !important;
+				font-weight: 600;
+				height: 1.5em;
+				width: 2em;
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+
+			&--selected {
+				.p2p-mobile-component-nav-bar__nav-bar__item__icon {
+					color: rgb(var(--rgb-blue)) !important;
+				}
+
+				.p2p-mobile-component-nav-bar__nav-bar__item__label {
+					color: rgb(var(--rgb-blue)) !important;
+				}
+			}
+
+			&__dropdown {
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+				li {
+					a {
+						color: black !important;
+
+						&:hover {
+							color: rgb(var(--rgb-blue)) !important;
+						}
+					}
+
+					a:hover {
+					}
+				}
+			}
+		}
+
+		&__more-dropdown {
+			display: inline-block;
+			position: relative !important;
+
+			&__dropdown {
+				background-color: rgb(var(--rgb-main-background-color));
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+				display: none;
+				min-width: 13em !important;
+				position: absolute !important;
+				right: 0;
+				z-index: 9999;
+
+				&__option {
+					color: rgb(var(--rgb-text-black));
+					margin: 0;
+					padding: 1em 1em;
+				}
+
+				&__option:hover {
+					background: rgb(var(--rgb-blue));
+					color: rgb(var(--rgb-text-black));
+					color: rgb(var(--rgb-text-white));
+					cursor: pointer;
+				}
+
+				&--open {
+					display: block !important;
+				}
+			}
+		}
+	}
+}

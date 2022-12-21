@@ -1,0 +1,161 @@
+.desktop-bank-deposit {
+	background-color: rgb(var(--rgb-mystic));
+	padding: 3rem 5%;
+
+	&__title {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 19px;
+		margin-bottom: 1.5em;
+	}
+
+	&__inform {
+		margin: 1em 0;
+
+		svg {
+			cursor: pointer;
+			margin-left: 10px;
+		}
+	}
+
+	&__input {
+		display: flex;
+		flex-direction: column;
+
+		&__label {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			letter-spacing: 0;
+
+			&__notice-icon {
+				cursor: pointer;
+				margin-bottom: 2px;
+				margin-left: 2px;
+			}
+
+			.tooltiptext {
+				background-color: rgb(var(--rgb-thin-blue));
+				border-radius: 6px;
+				padding: 5px 10px;
+
+				/* Position the tooltip */
+				position: absolute;
+				text-align: start;
+				visibility: hidden;
+				width: 200px;
+				z-index: 1;
+			}
+		}
+
+		&__label:hover .tooltiptext {
+			visibility: visible;
+		}
+
+		input {
+			background-color: rgb(var(--rgb-body-background-color));
+			border: 1px solid rgb(var(--rgb-text-placeholder));
+			border-radius: 10px 10px;
+		}
+
+		.ant-input-group-addon {
+			background-color: rgb(var(--rgb-mystic));
+			border: 1px solid rgb(var(--rgb-silver));
+			border-radius: 0 10px 10px 0;
+			color: rgb(var(--rgb-tundora));
+		}
+
+		&__notice {
+			color: rgb(var(--rgb-dusty-gray));
+			font-size: 10px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 14px;
+		}
+
+		&__error {
+			color: red;
+			font-size: 1rem;
+			margin-top: 0.6em;
+		}
+	}
+
+	&__transaction-fee {
+		margin-top: 2em;
+		width: 100%;
+
+		&__label {
+			font-size: 1.2rem;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 16px;
+			margin-right: 1em;
+		}
+
+		&__value {
+			font-size: 1.2rem;
+			font-weight: 700;
+			letter-spacing: 0;
+			line-height: 16px;
+		}
+	}
+
+	&__check-box {
+		background-color: rgb(var(--rgb-silver-29));
+		margin: 2em 0;
+		padding: 1em 1em 1em 1.5em;
+		width: 100%;
+
+		.ant-checkbox {
+			background-color: rgb(var(--rgb-silver-65));
+			border-radius: 3px;
+
+			.ant-checkbox-inner {
+			}
+		}
+
+		.ant-checkbox-wrapper {
+			color: rgb(var(--rgb-text-black));
+		}
+	}
+
+	&__modal-form {
+		&__inform-container {
+			background-color: rgb(var(--rgb-mystic));
+			border-radius: 3px;
+			padding: 2em 2em 1em;
+			width: 100%;
+
+			span {
+				color: rgb(var(--rgb-text-black));
+				font-family: Open Sans;
+				font-size: 12px;
+				font-weight: 400;
+				letter-spacing: 0;
+				line-height: 16px;
+				margin-bottom: 1em;
+			}
+		}
+
+		&__warning {
+			color: rgb(var(--rgb-cerulean));
+			margin-left: 0.5em;
+			margin-top: 1em;
+
+			&__icon {
+				margin-bottom: 3px;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	&__button {
+		border-radius: 50px;
+		color: rgb(var(--rgb-text-white)) !important;
+		font-size: 1rem;
+		font-weight: 400;
+		height: 3.6rem;
+		width: 15.8rem;
+	}
+}

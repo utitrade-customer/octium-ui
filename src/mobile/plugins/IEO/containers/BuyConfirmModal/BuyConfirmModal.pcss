@@ -1,0 +1,84 @@
+#buy-ieo-mobile-confirm-modal {
+	background: var(--header-background-color);
+	border-radius: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	left: 1%;
+	margin: auto;
+	padding-bottom: 20px;
+	position: absolute;
+	top: 15%;
+	width: 98%;
+	z-index: 1;
+
+	.buy-confirm-modal-header {
+		background: rgb(0 0 0 / 15%);
+		font-weight: bold;
+		text-align: center;
+		width: 100%;
+
+		h2 {
+			font-weight: bold;
+		}
+	}
+
+	.buy-confirm-modal-body {
+		&__info-price {
+			color: var(--system-text-black-color);
+
+			.buy-confirm-modal-body__info-price__mobilize {
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 20px;
+			}
+
+			.buy-confirm-modal-body__info-price__mobilize--up {
+				display: none;
+
+				span {
+					svg {
+						color: rgb(47, 182, 126);
+					}
+				}
+			}
+
+			.buy-confirm-modal-body__info-price__mobilize--down {
+				svg {
+					color: var(--blue);
+				}
+			}
+		}
+	}
+
+	.bonus {
+		text-align: center;
+
+		span {
+			color: var(--system-text-black-color);
+		}
+	}
+
+	.buy-confirm-modal-footer {
+		display: flex;
+		justify-content: space-around;
+
+		button {
+			border-radius: 15px;
+			color: var(--system-text-black-color);
+			font-size: 16px;
+			height: 36px;
+			outline: none;
+		}
+
+		&__cancel {
+			background: var(--body-background-color);
+			border: 0.5px solid #848e9c;
+		}
+
+		&__buy {
+			background: var(--blue);
+			padding: 0;
+		}
+	}
+}

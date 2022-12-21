@@ -1,0 +1,170 @@
+.p2p-mobile-component-item {
+	background-color: var(--body-background-color);
+	border-bottom: 1px solid var(--main-background-color);
+	border-radius: 5px;
+	border-top: 1px solid var(--main-background-color);
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+	margin: 1em 0;
+	padding: 1em;
+
+	&__header {
+		border-bottom: 1px solid rgba(237, 237, 237, 1);
+		column-gap: 5px;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0.5em;
+
+		&__left-container {
+			display: flex;
+
+			&__name {
+				color: rgb(var(--rgb-blue));
+				font-size: 1em;
+				font-weight: 600;
+				line-height: 1.36em;
+				margin-left: 10px;
+			}
+		}
+
+		&__right-container {
+			align-items: center;
+			display: flex;
+
+			&__order,
+			&__completion {
+				color: rgb(var(--rgb-dove-gray));
+				font-size: 0.9em;
+				font-weight: 400;
+				line-height: 1em;
+			}
+		}
+	}
+
+	&__body {
+		display: flex;
+
+		&__left-container {
+			width: 75%;
+
+			&__price {
+				color: rgb(var(--rgb-dove-gray));
+				font-size: 0.9em;
+				font-weight: 400;
+				line-height: 1.215em;
+				margin: 1em 0 0.5em;
+			}
+
+			&__number-price {
+				align-items: flex-end;
+				display: flex;
+
+				&__value {
+					color: rgb(var(--rgb-raisin-black));
+					font-size: 1.57em;
+					font-weight: 600;
+				}
+
+				&__unit {
+					color: rgb(var(--rgb-raisin-black));
+					font-size: 1em;
+					font-weight: 400;
+					line-height: 1.36em;
+					margin-left: 10px;
+				}
+			}
+
+			&__available-limit {
+				display: flex;
+				flex-direction: row;
+
+				&__labels {
+					&__label {
+						color: rgb(var(--rgb-dove-gray));
+						font-size: 0.86em;
+						font-weight: 400;
+						line-height: 1.215em;
+						margin: 0.5em 0;
+					}
+				}
+
+				&__values {
+					margin-left: 0.5em;
+
+					&__value {
+						color: rgb(var(--rgb-raisin-black));
+						font-size: 0.86em;
+						font-weight: 400;
+						line-height: 1.215em;
+						margin: 0.5em 0;
+						margin-left: 15px;
+					}
+				}
+			}
+
+			&__bank-transfer {
+				background-color: rgb(var(--rgb-main-background-color)) !important;
+				border: none;
+				border-radius: 5px;
+				color: rgb(var(--rgb-blue)) !important;
+				font-size: 0.86em;
+				font-weight: 600;
+				line-height: 1.215em;
+				margin-left: 2px;
+				margin-top: 1.5em;
+			}
+		}
+
+		&__right-container {
+			margin: auto auto;
+
+			&__btn {
+				background-color: transparent;
+				border-color: transparent;
+				border-radius: 5px;
+				font-size: 0.86em;
+				font-weight: 400;
+				height: 2.7em;
+				line-height: 1.143em;
+				margin-bottom: 2em;
+				width: 7em;
+
+				&:hover {
+					cursor: pointer;
+					opacity: 0.7;
+				}
+
+				&--buy {
+					background-color: rgb(var(--rgb-jungle-green)) !important;
+					border: none;
+					color: rgb(var(--rgb-text-white)) !important;
+				}
+
+				&--sell {
+					background-color: var(--asks) !important;
+					border: none;
+					color: rgb(var(--rgb-text-white)) !important;
+				}
+
+				&--limited {
+					background-color: rgb(var(--rgb-background-btn));
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 320px) {
+		.p2p-item-mobile__header__right-container__completion {
+			margin-left: 5px;
+		}
+	}
+
+	@media only screen and (max-width: 768px) and (min-width: 600px) {
+		.p2p-item-mobile__body__right-container__btn {
+			font-size: 1em;
+			font-weight: 500;
+			height: 40px;
+			line-height: 1.1em;
+			width: 110px;
+		}
+	}
+}

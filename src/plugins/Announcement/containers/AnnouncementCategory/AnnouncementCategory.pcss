@@ -1,0 +1,109 @@
+.announcment__category {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+	margin-top: 5rem;
+
+	.annount__category__container {
+		max-width: 1200px;
+		width: 100%;
+
+		.annount__category__heading {
+			margin-bottom: 4rem;
+
+			h3 {
+				color: var(--blue);
+				font-size: 40px;
+				font-weight: bold;
+				line-height: 54px;
+			}
+		}
+
+		.announcement__category__session {
+			background: var(--header-background-color);
+			border-radius: 8px;
+			min-height: 700px;
+
+			.article {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 3rem 2rem;
+
+				&__item {
+					/* align-items: center;
+					display: flex;
+					flex-direction: column;
+					justify-content: center; */
+					margin-bottom: 3rem;
+
+					.anticon-dollar-circle {
+						color: var(--blue);
+						font-size: 1.6rem;
+					}
+
+					.article__name {
+						color: var(--system-text-black-color);
+						cursor: pointer;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 19px;
+						margin-bottom: 0;
+						margin-left: 1rem;
+
+						&:hover {
+							color: var(--blue);
+							transition: ease-in-out 0.2s;
+						}
+					}
+				}
+			}
+		}
+
+		.announcement__category__detail {
+			background: var(--header-background-color);
+			border-radius: 8px;
+			height: 100%;
+			min-height: 700px;
+			padding-left: 4rem;
+
+			.announcement__category__heading {
+				color: var(--system-text-black-color);
+				font-size: 28px;
+				font-weight: bold;
+				line-height: 38px;
+				margin-bottom: 2rem;
+				padding-top: 1.8rem;
+			}
+
+			.article__list {
+				display: flex;
+				flex-direction: column;
+
+				&__item {
+					align-items: center;
+					display: flex;
+					margin-bottom: 3rem;
+
+					&__name {
+						color: var(--system-text-black-color);
+						cursor: pointer;
+						font-size: 16px;
+						line-height: 22px;
+						margin-bottom: 0;
+
+						&:hover {
+							color: var(--blue);
+							transition: ease-in-out 0.2s;
+						}
+					}
+
+					&__created {
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}

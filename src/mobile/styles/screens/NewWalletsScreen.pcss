@@ -1,0 +1,231 @@
+.td-mobile-wallets {
+	background-color: var(--main-background-color);
+
+	.td-mobile-cpn-estimated-value {
+		background-color: var(--body-background-color);
+		margin-bottom: 0.25em;
+
+		&__body {
+			&-currency {
+				background-color: var(--blue);
+				border-radius: 5px;
+				color: var(system-text-white-color);
+			}
+
+			&-number {
+				font-weight: 700;
+			}
+		}
+	}
+
+	.rc-tabs-nav-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.rc-tabs-tab {
+			background-color: var(--header-background-color);
+			padding: 0.4rem 0;
+			transition: ease-in-out 0.2s;
+			width: 100%;
+
+			.rc-tabs-tab-btn {
+				border: none;
+				color: black;
+				cursor: pointer;
+				font-size: 1.3rem;
+				outline: none;
+				text-align: center;
+			}
+
+			:hover {
+				font-weight: bold;
+			}
+		}
+
+		.rc-tabs-tab-active {
+			background-color: var(--blue);
+			color: black;
+			font-weight: bold;
+		}
+
+		.rc-tabs-ink-bar {
+			display: none;
+		}
+	}
+
+	&__header {
+		align-items: center;
+		background-color: var(--main-background-color);
+		display: flex;
+		justify-content: space-between;
+		padding: 1em 0;
+		width: 100%;
+
+		&__search-box {
+			align-items: center;
+			border: 0.5px solid rgb(var(--rgb-order-header-color));
+			border-radius: 0.25rem;
+			display: flex;
+			margin: 0;
+			max-width: 45%;
+			padding: 0.3em;
+
+			&__icon {
+				width: 30px;
+			}
+
+			&__input {
+				background: transparent;
+				border: none;
+				color: var(--system-text-black-color);
+				font-size: 0.9em;
+				outline: none;
+				width: calc(100% - 30px);
+			}
+		}
+
+		&__toggle {
+			align-items: center;
+			display: flex;
+			gap: 0.5em;
+			margin: 0;
+
+			&__text {
+				font-size: 0.75em;
+				text-align: right;
+			}
+
+			&__checkbox {
+				background-color: var(--main-background-color);
+				border: #c4c4c4 1px solid;
+				border-radius: 999px;
+				height: calc(1em + 3px);
+				margin: 0;
+				position: relative;
+				width: calc(2em + 3px);
+
+				&--checked {
+					background-color: #c4c4c4 !important;
+				}
+
+				&__input {
+					display: none;
+				}
+
+				&__dot {
+					background-color: #c4c4c4;
+					border-radius: 999px;
+					height: 1em;
+					left: 1.5px;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					transition: 0.3s ease-in-out;
+					width: 1em;
+				}
+
+				&__input:checked + &__dot {
+					background-color: var(--main-background-color);
+					left: calc(100% - 1em - 1.5px);
+				}
+			}
+		}
+	}
+
+	&__mode {
+		cursor: pointer;
+		padding: 1rem 0;
+
+		.mode--active {
+			background-color: var(--blue) !important;
+			color: #000;
+			font-weight: 700;
+		}
+
+		.mode-item {
+			background-color: rgb(var(--rgb-body-background-color));
+			color: #000;
+			padding: 0.5em;
+		}
+	}
+
+	&__list {
+		background-color: rgb(var(--rgb-body-background-color));
+		border-radius: var(--mobile-border-radius-small-size);
+		box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+		padding: var(--mobile-main-padding-lr-size);
+
+		&__item {
+			border-bottom: 1px solid var(--main-background-color);
+			display: block;
+			padding: 0.9em 0;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			&__top {
+				align-items: center;
+				color: var(--system-text-black-color);
+				display: flex;
+				gap: 0.5em;
+
+				&__icon {
+					border-radius: 999px;
+					height: 1.5em;
+					overflow: hidden;
+					width: 1.5em;
+
+					img {
+						max-height: 100%;
+						max-width: 100%;
+					}
+				}
+
+				&__text {
+					font-weight: 600;
+					padding-top: 3px;
+				}
+
+				&__number {
+					flex-grow: 1;
+					font-weight: 600;
+					padding-top: 3px;
+					text-align: right;
+					text-overflow: ellipsis;
+				}
+			}
+
+			&__bottom {
+				align-items: center;
+				color: var(--system-text-black-color);
+				display: flex;
+				font-size: 0.78em;
+				font-weight: 600;
+				gap: 0.5em;
+				margin-top: 0.2em;
+				padding-left: calc(1.5em + 0.5em + 3px);
+
+				&__text {
+					color: var(--muted-background-color);
+				}
+
+				&__number {
+					color: var(--muted-background-color);
+					flex-grow: 1;
+					text-align: right;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+	}
+
+	&__pagination {
+		padding: 1em 0;
+	}
+}

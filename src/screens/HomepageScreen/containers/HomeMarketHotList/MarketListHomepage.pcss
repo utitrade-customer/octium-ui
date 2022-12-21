@@ -1,0 +1,52 @@
+.home-markets-hot {
+	--border-color: var(--line-box-item);
+	--padding-item: 3rem;
+
+	&__slider {
+		margin-left: calc(var(--padding-item) * -1);
+		margin-top: 5rem;
+
+		.slick-active {
+			border-right: 1px solid var(--border-color);
+			width: 25% !important;
+		}
+	}
+
+	.market-item {
+		cursor: pointer;
+		height: 100px;
+		padding: 0 var(--padding-item);
+
+		&-icon {
+			height: 30px;
+		}
+
+		&-name {
+			color: var(--system-text-black-color, #000);
+			display: flex;
+			font-size: 1.5rem;
+			font-weight: 500;
+
+			&:hover {
+				color: var(--primary);
+			}
+		}
+
+		&-change-percent {
+			color: var(--bids);
+			font-weight: normal;
+			margin-left: 1.5rem;
+		}
+
+		&-last-price {
+			color: var(--system-text-black-color, #000);
+			font-size: 1.5rem;
+			font-weight: 400;
+			margin-top: 0.5rem;
+		}
+
+		&-price {
+			font-size: 1.15rem;
+		}
+	}
+}

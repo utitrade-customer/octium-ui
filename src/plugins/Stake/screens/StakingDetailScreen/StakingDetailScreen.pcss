@@ -1,0 +1,107 @@
+.desktop-staking-detail-screen {
+	padding: 0 10%;
+	padding-bottom: 50px;
+	position: relative;
+
+	&__notes {
+		background: var(--body-background-color);
+		border-radius: 10px;
+		box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+		color: var(--system-text-black-color);
+		font-size: 1.2rem;
+		list-style-type: square;
+		padding: 1rem 3rem;
+
+		li {
+			margin-bottom: 0.5em;
+		}
+	}
+
+	&__react-tabs {
+		background: var(--subheader-background-color);
+		border-radius: 10px;
+		box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+		box-sizing: border-box;
+		overflow: hidden;
+
+		.rc-tabs {
+			.rc-tabs-nav {
+				.rc-tabs-nav-operations-hidden,
+				.rc-tabs-top {
+					display: none;
+				}
+			}
+		}
+
+		.rc-tabs-nav-list {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.rc-tabs-tab {
+				background-color: var(--order-header-color);
+				border-bottom: 4px solid transparent;
+				font-size: 16px;
+				padding: 5px 0;
+				transition: ease-in-out 0.3s;
+				width: 100%;
+
+				.rc-tabs-tab-btn {
+					border: none;
+					cursor: pointer;
+					outline: none;
+					text-align: center;
+				}
+
+				:hover {
+					color: var(--system-text-black-color);
+					font-weight: bold;
+				}
+			}
+
+			.rc-tabs-tab-active {
+				background-color: var(--blue);
+				color: var(--system-text-black-color);
+				font-weight: bold;
+			}
+
+			.rc-tabs-ink-bar {
+				display: none;
+			}
+		}
+	}
+
+	&-disabled {
+		align-items: flex-start;
+		background-color: var(--thin-blue);
+		color: var(--system-text-black-color);
+		content: '';
+		display: flex;
+		font-size: 30px;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		padding: 2rem;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100%;
+		z-index: 9;
+	}
+}
+
+.head__text-warning {
+	background: var(--body-background-color);
+	border-radius: 10px 10px 0 0;
+	color: var(--blue) !important;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25px;
+	padding: 20px 0 20px 20px;
+	text-transform: uppercase;
+
+	h2 {
+		color: var(--blue) !important;
+		margin-bottom: 0 !important;
+	}
+}

@@ -1,0 +1,117 @@
+.p2p-mobile-component-cancel-confirmation-modal-bottom-sheet {
+	.ant-drawer-content-wrapper {
+		border-top-left-radius: 24px;
+		border-top-right-radius: 24px;
+	}
+
+	.ant-drawer-content {
+		border-top-left-radius: 24px;
+		border-top-right-radius: 24px;
+	}
+
+	.ant-drawer-header {
+		background: rgb(var(--rgb-body-background-color));
+		border-bottom: none;
+		box-shadow: none;
+		padding: 1.143em 1.643rem;
+	}
+
+	.ant-drawer-title {
+		color: rgb(var(--rgb-raisin-black));
+		font-size: 1.286rem;
+		font-weight: 600;
+		height: 1.5rem;
+		text-align: left;
+	}
+
+	&__body {
+		display: inline-block;
+		height: 100%;
+		overflow: scroll;
+
+		&__tips {
+			background-color: rgb(var(--rgb-seashell));
+			border-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			padding: 1em 0;
+
+			&__icon {
+				color: rgb(var(--rgb-blue));
+				height: 1.5em;
+				margin-bottom: 0.2em;
+				width: 2.5em;
+			}
+
+			&__content {
+				padding-left: 0.6em;
+
+				&__title {
+					color: rgb(var(--rgb-raisin-black));
+					font-weight: 600;
+				}
+
+				&__emphasizing {
+					color: rgb(var(--rgb-blue));
+					font-weight: 500;
+				}
+			}
+		}
+
+		&__cancel-reasons {
+			.ant-radio-wrapper {
+				color: rgb(var(--rgb-raisin-black));
+				padding: 0.5em 1rem;
+			}
+
+			.ant-radio-group {
+				font-size: 1rem;
+			}
+
+			&__title {
+				font-weight: 600;
+				margin: 1em 0;
+			}
+		}
+	}
+
+	&__button-group {
+		background-color: white;
+		bottom: 1em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: fixed;
+		width: 90%;
+
+		&__button {
+			border: none;
+			border-radius: 5px;
+			color: var(--system-text-white-color);
+			font-weight: 600;
+			height: 3em;
+			width: 50%;
+
+			&:first-child {
+				margin-right: 1rem;
+			}
+
+			&--active {
+				background-color: rgb(var(--rgb-blue)) !important;
+				color: var(--system-text-white-color) !important;
+			}
+
+			&--cancel {
+				background: var(--p2p-background-white);
+				border: 1px solid var(--p2p-text-primary) !important;
+				color: var(--p2p-text-primary) !important;
+			}
+
+			&--disable {
+				background-color: #dedede !important;
+				color: var(--p2p-text-second) !important;
+				cursor: not-allowed;
+			}
+		}
+	}
+}

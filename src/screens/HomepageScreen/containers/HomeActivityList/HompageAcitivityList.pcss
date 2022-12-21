@@ -1,0 +1,84 @@
+.home-activity-list {
+	--padding-item: 1rem;
+
+	margin-left: calc(var(--padding-item) * -1);
+	margin-right: calc(var(--padding-item) * -1);
+	margin-top: 3rem;
+
+	.activity {
+		&-slider {
+			.slick-slide {
+				width: 80% !important;
+			}
+
+			.slick-track {
+				height: 75px !important;
+			}
+		}
+
+		&-photo {
+			height: 14rem;
+			padding: 0 var(--padding-item);
+
+			img {
+				border-radius: 10px;
+				height: 100%;
+
+				/* object-fit: cover; */
+				width: 100%;
+			}
+		}
+
+		&-icon {
+			margin: 0 var(--padding-item);
+
+			svg {
+				border-radius: 5px;
+			}
+		}
+
+		&-description {
+			color: var(--system-text-black-color, #000);
+			font-size: 1.25rem;
+			width: 70% !important;
+
+			.activity-time {
+				color: var(--system-text-gray-color, #999);
+				margin-left: 2rem;
+			}
+		}
+
+		&-link {
+			color: var(--primary);
+			font-size: 1.25rem;
+			padding-right: var(--padding-item);
+			width: 30%;
+		}
+	}
+
+	.slick-dots {
+		li {
+			height: auto !important;
+
+			button {
+				background: #e0e3ed;
+				border-radius: 100px;
+				height: 0.5rem;
+				padding: 0;
+				width: 2rem;
+
+				&::before {
+					content: '';
+					height: 0;
+					width: 0;
+				}
+			}
+		}
+
+		.slick-active {
+			button {
+				background: var(--primary);
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.pg-mobile-profile-bank-accounts-item {
+	background: rgb(var(--rgb-mystic));
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	margin-bottom: 1em;
+	width: 100%;
+
+	&__header {
+		background: rgb(var(--rgb-body-background-color));
+		border-radius: 5px 5px 0 0;
+		padding: 0.5em 1em;
+		width: 100%;
+
+		span {
+			color: rgb(var(--rgb-primary-text-color));
+			font-weight: 600;
+			letter-spacing: 0;
+			line-height: 16px;
+		}
+
+		&__button {
+			align-items: center;
+			border: 1px solid rgb(var(--rgb-milano-red));
+			border-radius: 50px;
+			display: flex;
+			flex-direction: row;
+
+			span {
+				color: rgb(var(--rgb-milano-red));
+				font-weight: 400;
+				letter-spacing: 0;
+				line-height: 15px;
+				padding-left: 0.5em;
+			}
+		}
+	}
+
+	&__body-content {
+		align-items: center;
+		border-bottom: 1px solid rgb(var(--rgb-body-background-color));
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 1em 1em;
+
+		&__label {
+			color: rgb(var(--rgb-dusty-gray));
+			font-weight: 400;
+			line-height: 15px;
+		}
+
+		&__content {
+			color: rgb(var(--rgb-primary-text-color));
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 15px;
+		}
+	}
+}
